@@ -60,7 +60,7 @@ function kubeJobRunner (config, k) {
     k.storage.enabled = false
     k.image = "lachlanevenson/k8s-kubectl:v1.8.2"
     k.tasks = [
-        `kubectl set image deployment/azure-vote-front vote-web-cntnr=nataliedocker.azurecr.io/azureworkshop/azure-vote-front:${config.get("imageTag")}`
+        `kubectl set image deployment/azure-vote-front azure-vote-front=nataliedocker.azurecr.io/azureworkshop/azure-vote-front:${config.get("imageTag")}`
     ]
 }
 

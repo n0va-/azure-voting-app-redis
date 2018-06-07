@@ -64,7 +64,7 @@ function kubeJobRunner (config, k) {
     ]
 }
 
-function getBranch (p) {
+function getBranch (p) { 
     if (p.ref) {
         return p.ref.substring(11)
     } else {

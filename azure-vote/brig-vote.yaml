@@ -1,0 +1,12 @@
+project: "n0va-/azure-voting-app-redis"
+repository: "github.com/n0va-/azure-voting-app-redis"
+cloneURL: "https://github.com/n0va-/azure-voting-app-redis"
+sharedSecret: "this-is-a-secret"
+# MAKE SURE YOU CHANGE THIS. It's basically a password
+github:
+  token: "8f1dbf36369855c5719a323b13e477a569b8c0bd"
+secrets:
+  acrServer: nataliedocker.azurecr.io
+  acrUsername: nataliedocker
+  acrPassword: "tqlws721M1fXxjeE97EQygwjTu=+x/za"
+vcsSidecar: "deis/git-sidecar:v0.11.0"

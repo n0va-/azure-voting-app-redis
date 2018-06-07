@@ -36,7 +36,7 @@ events.on("push", (brigadeEvent, project) => {
     }  
 })
 
-events.on("after", (event, proj) => {
+events.on("after", (event, proj) => { 
     console.log("brigade pipeline finished successfully")    
 })
 

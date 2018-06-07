@@ -47,7 +47,7 @@ function dockerJobRunner(config, d) {
     d.tasks = [
         "dockerd-entrypoint.sh &",
         "echo waiting && sleep 20",
-        "cd azure-vote",
+        "cd azure-voting-app-redis/azure-vote",
         `docker login ${config.get("acrServer")} -u ${config.get("acrUsername")} -p ${config.get("acrPassword")}`,
         `docker build --build-arg BUILD_DATE='1/1/2017 5:00' --build-arg IMAGE_TAG_REF=${config.get("imageTag")} --build-arg VCS_REF=${config.get("gitSHA")} -t ${config.get("webImage")} .`,
         `docker tag ${config.get("webImage")} ${config.get("webACRImage")}:${config.get("imageTag")}`,
